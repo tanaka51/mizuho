@@ -1,1 +1,7 @@
-{{outlet}}
+{{#each model as |game| }}
+  <ol>
+    {{#each game.users as |user| }}
+      <li>{{user.name}}</li>
+    {{/each}}
+  </ol>
+{{/each}}
